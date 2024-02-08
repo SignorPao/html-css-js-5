@@ -156,6 +156,80 @@ nav {
   display: none;
 }
 
+.header__container {
+  padding-block: 10rem 15rem;
+}
+
+.header__container p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: var(--white);
+  text-align: center;
+  opacity: 0.6;
+}
+
+.header__container h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 4.5rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.header__container h1 span {
+  color: var(--primary-color);
+}
+
+.booking__container {
+  padding-block: 0;
+}
+
+.booking__form {
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: var(--white);
+  border-radius: 10px;
+  transform: translateY(-50%);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.input__group {
+  display: flex;
+  flex: 1 1 220px;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.input__group span {
+  font-size: 1.75rem;
+  color: var(--primary-color);
+}
+
+.input__group label {
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.input__group input {
+  display: block;
+  width: 100%;
+  max-width: 150px;
+  padding-block: 5px;
+  color: var(--text-dark);
+  font-size: 0.9rem;
+  outline: none;
+  border: none;
+}
+
+.input__group input::placeholder {
+  color: var(--text-light);
+}
+
 @media (width > 768px) {
   nav {
     padding: 2rem 1rem;
