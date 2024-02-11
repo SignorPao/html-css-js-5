@@ -340,10 +340,6 @@ nav {
   padding: 2rem 4rem;
   background-color: var(--white);
 }
-.section__subheader {
-}
-.section__header {
-}
 
 .service__list {
   list-style: none;
@@ -351,13 +347,99 @@ nav {
   display: grid;
   gap: 2rem;
 }
-.ri-shield-star-line {
+
+.service__list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-dark);
 }
-.ri-24-hours-line {
+
+.service__list span {
+  padding: 5px 12px;
+  font-size: 1.75rem;
+  color: var(--text-dark);
+  background-color: var(--text-light);
+  border-radius: 100%;
 }
-.ri-headphone-line {
+
+.service__list li:nth-child(1) span {
+  color: #60a5fa;
+  background-color: #dbeafe;
 }
-.ri-map-2-line {
+
+.service__list li:nth-child(2) span {
+  color: #f472b6;
+  background-color: #fce7f3;
+}
+
+.service__list li:nth-child(3) span {
+  color: #c084fc;
+  background-color: #f3e8ff;
+}
+
+.service__list li:nth-child(4) span {
+  color: #fb7185;
+  background-color: #ffe4e6;
+}
+
+.section__container {
+}
+.banner__container {
+}
+.banner__content {
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.banner__card {
+  text-align: center;
+  flex: 1 1 180px;
+}
+
+.banner__card h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.banner__card p {
+  color: var(--text-light);
+}
+
+.explore :is(.section__subheader, .section__header) {
+  text-align: center;
+  margin-inline: auto;
+}
+.section__subheader {
+}
+.section__header {
+}
+
+.explore__bg {
+  margin-top: 4rem;
+  padding-block: 3rem;
+  display: grid;
+  grid-template-columns: 
+  minmax(1rem, 1fr) 
+  minmax(0, var(--max-width)) 
+  minmax(1rem,1fr);
+  background-image: url('assets/explore.jpg');
+}
+
+.explore__content {
+}
+.section__description {
+}
+.btn {
 }
 
 @media (width > 576px) {
@@ -414,6 +496,10 @@ nav {
 
   .room__grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .service__content {
+    grid-column: 2/3;
   }
 }
 

@@ -17,9 +17,9 @@ navLinks.addEventListener("click", () => {
 });
 
 const scrollRevealOption = {
-  distance: "50px",
+  distance: "100px",
   origin: "bottom",
-  duration: 1000,
+  duration: 1500,
 };
 
 ScrollReveal().reveal(".header__container p", {
@@ -61,4 +61,10 @@ ScrollReveal().reveal(".room__card", {
   ...scrollRevealOption,
   inteval: 500,
   delay: 1000,
+});
+
+ScrollReveal().reveal(".service__list li", {
+  ...scrollRevealOption,
+  inteval: 500,
+  origin: "right",
 });
