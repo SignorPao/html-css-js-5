@@ -68,3 +68,7 @@ ScrollReveal().reveal(".service__list li", {
   inteval: 500,
   origin: "right",
 });
+
+const thisYear = new Date().getFullYear(),
+  year = document.getElementById("year");
+year.innerHTML = `${thisYear}`;
