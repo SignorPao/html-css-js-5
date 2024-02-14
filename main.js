@@ -72,3 +72,12 @@ ScrollReveal().reveal(".service__list li", {
 const thisYear = new Date().getFullYear(),
   year = document.getElementById("year");
 year.innerHTML = `${thisYear}`;
+
+const scrollUp = () => {
+  const scrollUp = document.getElementById("scroll-up");
+  this.scrollY >= 350
+    ? scrollUp.classList.add("show-scroll")
+    : scrollUp.classList.remove("show-scroll");
+};
+
+window.addEventListener("scroll", scrollUp);
