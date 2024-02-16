@@ -94,7 +94,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -103,7 +103,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--primary-color);
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -644,5 +644,9 @@ nav {
 
   .room__grid {
     gap: 2rem;
+  }
+
+  .scrollup {
+    right: 4rem;
   }
 }
